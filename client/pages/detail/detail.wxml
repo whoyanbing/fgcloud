@@ -1,0 +1,38 @@
+<view class='page'>
+    <view class="page_hd">
+        <image lazy-load src="{{videoInfo.vod_pic}}"></image>
+        <view class="page_bd">
+            <view class="weui-cells__title">视频信息</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">名称:{{videoInfo.vod_name}}</view>
+                </view>
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">类型:{{videoInfo.vod_class}}片</view>
+                </view>
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">导演:{{videoInfo.vod_director}}</view>
+                </view>
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">主演:{{videoInfo.vod_actor}}</view>
+                </view>
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">年代:{{videoInfo.vod_year}}</view>
+                </view>
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">地区:{{videoInfo.vod_area}}</view>
+                </view>
+            </view>
+            <view class="weui-cells__title">播放信息</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell">
+                    <scroll-view scroll-x>
+                        <navigator url="../play/play?name={{videoInfo.vod_name}}&playUrl={{playUrl}}">
+                            <button class="weui-btn mini-btn" type="primary" size="mini">播放</button>
+                        </navigator>
+                    </scroll-view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

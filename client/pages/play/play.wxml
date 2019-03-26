@@ -1,0 +1,13 @@
+<view class='page'>
+    <view class="page_hd">
+        <video object-fit="fill" controls vslide-gesture-in-fullscreen show-center-play-btn play-btn-position="center" title="{{playUrl}}" show-play-btn show-progress src="{{playUrl}}"></video>
+        <view class="page_bd">
+            <view class="weui-cells__title">正在播放</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">{{videoName}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
